@@ -1,0 +1,110 @@
+.contact {
+  width: 100%;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  &__content {
+    width: 100%;
+    max-width: 1140px;
+    height: 580px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    @media screen and (max-width: 468px) {
+      flex-direction: column;
+      padding: 60px 0;
+      height: auto;
+    }
+
+    &__contact-left {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      
+
+      @media screen and (max-width: 468px) {
+        width: 80%;
+        align-items: flex-start;
+        margin-bottom: 50px;
+        
+      }
+
+      &__text {
+        color: #0f241d;
+        font-size: 36px;
+        font-weight: 700;
+        text-align: start;
+
+        @media screen and (max-width: 468px) {
+          font-size: 30px;
+        }
+
+        &__paragraphy {
+          color: #767676;
+          font-size: 18px;
+          font-weight: normal;
+          text-align: start;
+
+          @media screen and (max-width: 468px) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    &__contact-right {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      text-align: start;
+
+      @media screen and (max-width: 468px) {
+        width: 80%;
+        align-items: flex-start;
+      }
+
+      &__combo {
+        width: 262px;
+        height: 136px;
+        align-items: center;
+
+        @media screen and (max-width: 468px) {
+          width: 100%;
+        }
+
+        &__item {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          &__img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+          }
+
+          &__text {
+            color: #767676;
+            font-size: 18px;
+            font-weight: 400;
+            text-align: start;
+
+            @media screen and (max-width: 468px) {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
