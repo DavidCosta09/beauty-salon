@@ -1,6 +1,6 @@
 import "./styles.scss";
-import Logo from "../../assets/logo.png";
-import Menu from "../../assets/menu.png";
+import logo from "../../assets/logo.png";
+import menu from "../../assets/menu.png";
 
 const HeaderComponent = ({setMenu}:any) => {
   return (
@@ -9,11 +9,11 @@ const HeaderComponent = ({setMenu}:any) => {
         <div className="header__content__header-left">
           <img
             className="header__content__header-left__img"
-            src={Logo}
+            src={logo}
             alt="beauty salon"
           />
         </div>
-        <img className="header__content__img" onClick={() => setMenu(true)} src={Menu} alt="menu"></img>
+        <img className="header__content__img" onClick={() => setMenu(true)} src={menu} alt="menu"></img>
         <div className="header__content__main">
           <div className="header__content__main__header-right">
             <a href="#/">
